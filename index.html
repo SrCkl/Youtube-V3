@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube V2</title>
+  <meta name="description" content="Melhores vídeos do YouTube para você." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img
+          src="data:image/png;base64,SEU_LOGO_BASE64_AQUI"
+          alt="Logo do site"
+          width="120"
+          height="120"
+          loading="lazy"
+          decoding="async"
+        />
+        <span class="brand-title">YouTube 2</span>
+      </div>
+      <nav class="header-actions">
+        <a class="btn" href="https://www.google.com/search?q=horario+de+brasilia" target="_blank" rel="noopener noreferrer">
+          Ver horário de Brasília
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Melhores vídeos do YouTube para você</h1>
+
+    <section class="grid">
+      <article class="card">
+        <h2 class="card-title">Vídeo muito sigma</h2>
+        <div class="video">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/ObGPD8i9Yrk"
+            title="Vídeo: Muito Sigma"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Música que dá mais AURA</h2>
+        <div class="video">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/e0wrNs42WUM"
+            title="Música que dá AURA"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            loading="lazy"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2 class="card-title">Atalho pro vídeo</h2>
+        <a class="thumb-link" href="https://youtu.be/3qSvX6hgiwA?feature=shared" target="_blank" rel="noopener noreferrer">
+          <img
+            src="data:image/png;base64,SUA_IMAGEM_BASE64_AQUI"
+            alt="Miniatura do vídeo"
+            loading="lazy"
+            decoding="async"
+            width="400"
+            height="225"
+          />
+        </a>
+      </article>
+    </section>
+
+    <section aria-labelledby="galeria">
+      <h2 id="galeria">Galeria</h2>
+      <div class="gallery">
+        <img src="data:image/jpeg;base64,SUA_IMAGEM_BASE64_AQUI" alt="Imagem 1" loading="lazy" decoding="async" width="300" height="200" />
+        <img src="data:image/jpeg;base64,SUA_IMAGEM_BASE64_AQUI" alt="Imagem 2" loading="lazy" decoding="async" width="300" height="200" />
+        <img src="data:image/jpeg;base64,SUA_IMAGEM_BASE64_AQUI" alt="Imagem 3" loading="lazy" decoding="async" width="300" height="200" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> YouTube 2 — feito com ♥</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
